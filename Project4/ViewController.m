@@ -9,6 +9,8 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+- (IBAction)makeLeak:(id)sender;
+- (IBAction)releaseCar:(id)sender;
 
 @end
 
@@ -26,4 +28,13 @@
 }
 
 
+- (IBAction)makeLeak:(id)sender {
+    self.myCar = [[Car alloc] init];
+    [self.myCar drive];
+    [self.myCar gasMileage];
+}
+
+- (IBAction)releaseCar:(id)sender {
+    self.myCar = nil;
+}
 @end

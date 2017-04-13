@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "Car.h"
 @interface ViewController : UIViewController
-
+@property (strong, nonatomic) Car* myCar;
 
 @end
 
