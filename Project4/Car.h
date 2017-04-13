@@ -13,4 +13,5 @@ typedef double (^SimpleBlock)();
 @property double totalUsedGas;
 @property (copy, nonatomic) SimpleBlock gasMileage;
 -(void) drive;
+-(void)print;
 @end

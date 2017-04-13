@@ -30,4 +30,7 @@
 -(void)dealloc{
     NSLog(@"Car is veing deinitialized");
 }
+-(void) print{
+    NSLog(@"Print!");
+}
 @end
